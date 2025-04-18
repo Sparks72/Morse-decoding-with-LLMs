@@ -5,8 +5,8 @@ This project is a fully browser-based Morse code decoder designed to work reliab
 ## Features
 
 - Real-time decoding of Morse code via microphone input
-- Self-adjusting speed detection (12â€“40 WPM)
-- Goertzel algorithm-based tone detection (500â€“900 Hz)
+- Self-adjusting speed detection (12-40 WPM)
+- Goertzel algorithm-based tone detection (500-900 Hz)
 - Noise-adaptive thresholding to minimise false decoding
 - Responsive visual feedback (waveform, spectrum, SNR)
 - Fully self-contained HTML+JavaScript
