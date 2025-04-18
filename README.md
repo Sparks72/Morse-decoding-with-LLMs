@@ -80,10 +80,10 @@ Works even with very weak signals!
 
 ### Interface Preview
 
-![Top view](https://raw.githubusercontent.com/sparks72/Morse-decoding-with-LLMs/main/screenshot1.png)  
+![Top view]([https://raw.githubusercontent.com/sparks72/Morse-decoding-with-LLMs/main/screenshot1.png](https://github.com/Sparks72/Morse-decoding-with-LLMs/blob/main/screenshot1.png))  
 *Controls & Decoder Settings*
 
-![Bottom view](https://raw.githubusercontent.com/sparks72/Morse-decoding-with-LLMs/main/screenshot2.png)  
+![Bottom view]([https://raw.githubusercontent.com/sparks72/Morse-decoding-with-LLMs/main/screenshot2.png](https://github.com/Sparks72/Morse-decoding-with-LLMs/blob/main/screenshot2.png))  
 *Signal Visualisers & Status Display*
 
 
