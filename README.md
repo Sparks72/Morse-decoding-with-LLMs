@@ -19,12 +19,6 @@ This project is a fully browser-based Morse code decoder designed to work reliab
 2. Click **Start Decoding** and allow microphone access.
 3. Tune your signal to the target frequency and observe the output.
 
-## Publishing to GitHub Pages
-
-1. Create a repository named `Morse decoding with LLM's`.
-2. Upload these files.
-3. Go to **Settings â†’ Pages** and set the source to the `main` branch and `/ (root)` directory.
-4. Your decoder will be live at `https://<your-username>.github.io/morse-decoding-with-llms/`.
 
 ## License
 
