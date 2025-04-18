@@ -78,6 +78,16 @@ Works even with very weak signals!
 
 ---
 
+### Interface Preview
+
+![Top view](https://raw.githubusercontent.com/sparks72/Morse-decoding-with-LLMs/main/screenshot1.png)  
+*Controls & Decoder Settings*
+
+![Bottom view](https://raw.githubusercontent.com/sparks72/Morse-decoding-with-LLMs/main/screenshot2.png)  
+*Signal Visualisers & Status Display*
+
+
+
 ## ⚖️ License
 
 This project is provided freely for educational and amateur radio use.  
