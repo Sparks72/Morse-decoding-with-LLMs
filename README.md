@@ -1,126 +1,87 @@
-# Professional Morse Code Decoder with QRZ Integration
+# Enhanced Morse Code Decoder with QRZ Integration
 
-![Morse Code Decoder](https://img.shields.io/badge/Morse%20Code-Decoder-blue)
-![QRZ Integration](https://img.shields.io/badge/QRZ-Integration-green)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+A professional-grade Morse code decoder that automatically detects amateur radio callsigns and provides instant QRZ.com lookups with detailed station information.
 
-A professional-grade web application for decoding Morse code from audio input with adaptive speed, frequency tuning, and automatic ham radio callsign detection with QRZ.com integration.
+## Screenshots
 
-## 📊 Demo
+![Screenshot 1](screenshot1.png)
+*Main decoder interface with real-time waveform and spectrum analysis*
 
-![screenshot][https://github.com/Sparks72/Morse-decoding-with-LLMs/QRZ-Integration/screenshot1.png)
-![screenshot][https://github.com/Sparks72/Morse-decoding-with-LLMs/QRZ-Integration/screenshot2.png)
-## ✨ Features
+![Screenshot 2](screenshot2.png) 
+*QRZ integration showing automatic callsign detection with info bubbles*
 
-### 🎯 Core Functionality
-- **Real-time Morse code decoding** from microphone input
-- **Adaptive speed detection** (12-40 WPM)
-- **Auto-frequency tuning** (500-900 Hz range)
-- **Signal visualization** with waveform and spectrum displays
-- **Adaptive threshold** with noise floor estimation
+## Live Demo
 
-### 📡 Ham Radio Features
-- **Automatic callsign detection** with validation against ITU regulations
-- **QRZ.com integration** for instant operator information lookup
-- **Callsign logging** with timestamp tracking
-- **Interactive UI** with clickable callsigns for detailed info
+🔗 **[Try the Enhanced Morse Decoder](https://sparks72.github.io/Morse-decoding-with-LLMs/enhanced-morse-decoder.html)**
 
-### 📝 Technical Highlights
-- **Goertzel algorithm** for efficient tone detection
-- **Adaptive timing** for variable speed decoding
-- **SNR calculation** with confidence metrics
-- **Web Audio API** for real-time signal processing
+## Features
 
-## 🚀 Getting Started
+### 🎧 Advanced Morse Decoding
+- **Adaptive Speed Detection** (12-40 WPM)
+- **Auto-Frequency Tuning** (500-900 Hz range)
+- **Real-time Goertzel tone detection**
+- **Noise reduction and SNR analysis**
+- **Visual waveform and spectrum displays**
 
-### Prerequisites
+### 📡 QRZ.com Integration
+- **Automatic callsign detection** with ITU validation
+- **Interactive info bubbles** with station details
+- **Connecting lines** between callsigns and data
+- **Smart querying** (only after complete words)
+- **Special event station support** (multiple digits)
+- **Auto-detection toggle** (off by default)
+
+### 🎛️ Professional Features
+- **Keyboard shortcuts** (Spacebar = start/stop, Ctrl+C = clear)
+- **Responsive design** for desktop and mobile
+- **Real-time confidence indicators**
+- **Session memory** for QRZ credentials
+- **Audio stream interruption recovery**
+
+## Usage
+
+1. **Open** the [live demo](https://sparks72.github.io/Morse-decoding-with-LLMs/enhanced-morse-decoder.html) or download the HTML file
+2. **Grant microphone permission** when prompted
+3. **Configure QRZ credentials** (optional, requires XML subscription)
+4. **Enable auto-callsign detection** if desired
+5. **Click "Start Decoding"** or press spacebar
+6. **Play Morse code** - audio will be decoded in real-time
+7. **Click highlighted callsigns** to see QRZ data bubbles
+
+## Requirements
+
 - Modern web browser with microphone access
-- QRZ.com account with XML data subscription (optional, for callsign lookups)
+- QRZ.com XML subscription (for callsign lookups)
+- Audio source (microphone, radio, or audio interface)
 
-### Installation
-1. Clone this repository:
-   ```
-   git clone [https://github.com/Sparks72/Morse-decoding-with-LLMs/QRZ-Integration.git]
-   ```
-2. Open `index.html` in your web browser
-3. Allow microphone access when prompted
+## Technical Details
 
-### Using the Decoder
+- **Pure HTML/CSS/JavaScript** - no external dependencies
+- **Goertzel algorithm** for precise tone detection
+- **ITU amateur radio callsign validation**
+- **CORS proxy** for QRZ API access (production deployment needs proper proxy)
 
-1. **Starting the Decoder**:
-   - Click "Start Decoding" or press the spacebar
-   - Adjust the threshold level if needed (recommended: 0.10)
+## Ham Radio Optimized
 
-2. **Decoding Morse Code**:
-   - The application will automatically detect the frequency and speed
-   - Watch the waveform and spectrum displays for signal visualization
-   - Decoded text appears in the output window
+Designed by amateur radio operators for amateur radio operators, with attention to:
+- Real-world operating conditions
+- Contest and DX scenarios  
+- Portable/mobile operations
+- Training and practice modes
 
-3. **Using QRZ Integration**:
-   - Enter your QRZ.com username and password
-   - Click "Test QRZ Connection" to verify
-   - Enable "Auto-detect callsigns" to automatically identify and lookup callsigns
-   - Click on any highlighted callsign to view operator details
+## Project Links
 
-4. **Keyboard Shortcuts**:
-   - **Spacebar**: Start/Stop decoding
-   - **Ctrl+C**: Clear output
+- **Main Repository**: [Morse-decoding-with-LLMs](https://github.com/Sparks72/Morse-decoding-with-LLMs)
+- **QRZ Integration Branch**: [QRZ-Integration](https://github.com/Sparks72/Morse-decoding-with-LLMs/tree/QRZ-Integration)
+- **Live Demo**: [Enhanced Decoder](https://sparks72.github.io/Morse-decoding-with-LLMs/enhanced-morse-decoder.html)
 
-## ⚙️ Technical Details
+## Contributing
 
-### Morse Code Decoding Process
-The application uses the following pipeline for decoding:
-1. Audio capture using Web Audio API
-2. Signal processing with Goertzel algorithm for tone detection
-3. Threshold-based signal detection with adaptive noise floor estimation
-4. Timing analysis for dot/dash determination
-5. Morse pattern matching to alphanumeric characters
-6. Automatic speed (WPM) adaptation based on dot length
+This project welcomes contributions from the amateur radio community. Feel free to submit issues or pull requests.
 
-### Callsign Detection
-- Regular expression pattern matching with ITU regulation validation
-- Contextual filtering to avoid false positives
-- QRZ.com XML API integration for operator data
+## License
 
-### Audio Processing Parameters
-- **FFT Size**: 512 samples (optimized for responsiveness)
-- **Frequency Range**: 500-900 Hz (configurable)
-- **Speed Range**: 12-40 WPM (configurable)
-- **Smoothing Time Constant**: 0.3 (balanced for stability)
-
-## 🔧 Configuration Options
-
-| Parameter | Description | Default |
-|-----------|-------------|---------|
-| Target Frequency | Center frequency for detection | 700 Hz |
-| Speed (WPM) | Words per minute for manual timing | 20 WPM |
-| Threshold Level | Signal detection threshold | 0.10 |
-| Noise Reduction | Background noise filtering level | 5 |
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgements
-
-- [QRZ.com](https://www.qrz.com/) for providing the callsign database API
-- Web Audio API for real-time audio processing capabilities
-- The amateur radio community for ongoing testing and feedback
-
-## 📧 Contact
-
-Project Link: [https://github.com/Sparks72/Morse-decoding-with-LLMs/QRZ-Integration)
+Open source - free for amateur radio use
 
 ---
-
-*73's and happy decoding!*
+**73!** 📻
