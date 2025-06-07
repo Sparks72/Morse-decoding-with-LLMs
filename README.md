@@ -8,8 +8,8 @@ A professional-grade web application for decoding Morse code from audio input wi
 
 ## 📊 Demo
 
-![screenshot][https://github.com/Sparks72/Morse-decoding-with-LLMs/QRZ-Intergration/screenshot1.png)
-![screenshot][https://github.com/Sparks72/Morse-decoding-with-LLMs/QRZ-Intergration/screenshot2.png)
+![screenshot][https://github.com/Sparks72/Morse-decoding-with-LLMs/QRZ-Integration/screenshot1.png)
+![screenshot][https://github.com/Sparks72/Morse-decoding-with-LLMs/QRZ-Integration/screenshot2.png)
 ## ✨ Features
 
 ### 🎯 Core Functionality
@@ -40,7 +40,7 @@ A professional-grade web application for decoding Morse code from audio input wi
 ### Installation
 1. Clone this repository:
    ```
-   git clone [https://github.com/Sparks72/Morse-decoding-with-LLMs/QRZ-Intergration.git]
+   git clone [https://github.com/Sparks72/Morse-decoding-with-LLMs/QRZ-Integration.git]
    ```
 2. Open `index.html` in your web browser
 3. Allow microphone access when prompted
@@ -119,7 +119,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 📧 Contact
 
-Project Link: [https://github.com/Sparks72/Morse-decoding-with-LLMs/QRZ-Intergration)
+Project Link: [https://github.com/Sparks72/Morse-decoding-with-LLMs/QRZ-Integration)
 
 ---
 
